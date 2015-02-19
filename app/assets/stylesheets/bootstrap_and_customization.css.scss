@@ -1,6 +1,18 @@
-$body-bg:   #2c3e50;
-$navbar-default-bg: orange;
-$navbar-default-link-color: white;
-$brand-primary: #2980b9;
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+$body-bg:   					white;
+$font-family: 'Ubuntu', sans-serif;
+$navbar-default-bg: 			white;
+$navbar-default-link-color: 	#c0392b;
+$navbar-height: 				45px;
+$brand-primary: 				#c0392b;
+$jumbotron-bg: 					#ecf0f1;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+.navbar-brand {
+	font-weight: bold;
+}
