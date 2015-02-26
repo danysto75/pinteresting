@@ -1,6 +1,13 @@
 <div class="jumbotron center">
 <h1>Welcome to DS's first app!</h1>
 <p>Cool pages coming up</p>
-<p> Sign up <a href="http://google.com">here</a></p>
-<p> Contact me <%= link_to "here", "#", class: "btn btn-primary" %></p>
+
+	<% if user_signed_in? %>
+		#do something
+		<% else %>
+		<p> Sign up <%= link_to "here", new_user_registration_path, class: "btn btn-primary" %>
+		<%= link_to "log in", new_user_session_path, class: "btn btn-default" %>
+		</p>
+	<% end %>
+
 </div>
